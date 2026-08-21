@@ -369,7 +369,7 @@
 
   <div class="progress-bar">
     <div class="progress-track"><div class="progress-fill" id="progressFill" style="width: 0%;"></div></div>
-    <div class="progress-count"><span id="scoreCount">0</span> / 22 checked</div>
+    <div class="progress-count"><span id="scoreCount">0</span> / 24 checked</div>
   </div>
 
   <div class="section-label">Part One</div>
@@ -437,23 +437,23 @@
   </div>
 
   <div class="quote">
-    “Most businesses can check off a handful of these boxes. <b>Few can check off all twenty-two</b> — and that gap is usually where budget gets wasted.”
+    “Most businesses can check off a handful of these boxes. <b>Few can check off all twenty-four</b> — and that gap is usually where budget gets wasted.”
   </div>
 
   <div class="result-wrap">
     <div class="prompt-panel" id="promptPanel" style="display: block;">Check off boxes above to see your results here.</div>
     <div class="result-panel tier-high" id="resultHigh">
-      <div class="result-score"><span id="scoreHighNum">0</span><span>/22 checked</span></div>
+      <div class="result-score"><span id="scoreHighNum">0</span><span>/24 checked</span></div>
       <div class="result-tag">Real Discipline</div>
       <div class="result-desc">You're operating with real discipline. The gap left to close is optimization, not fundamentals — a few sharp adjustments will compound fast.</div>
     </div>
     <div class="result-panel tier-mid" id="resultMid">
-      <div class="result-score"><span id="scoreMidNum">0</span><span>/22 checked</span></div>
+      <div class="result-score"><span id="scoreMidNum">0</span><span>/24 checked</span></div>
       <div class="result-tag">Room To Grow</div>
       <div class="result-desc">You have solid pieces in place, but you're likely leaving performance — and budget efficiency — on the table. A focused review could close that gap quickly.</div>
     </div>
     <div class="result-panel tier-low" id="resultLow">
-      <div class="result-score"><span id="scoreLowNum">0</span><span>/22 checked</span></div>
+      <div class="result-score"><span id="scoreLowNum">0</span><span>/24 checked</span></div>
       <div class="result-tag">Running Blind</div>
       <div class="result-desc">Your marketing is running on assumptions, not data. That's costing you more than you think — and it's exactly where a second set of eyes helps most.</div>
     </div>
@@ -464,7 +464,7 @@
   <div class="scoring-title">How many did you check?</div>
   <div class="score-grid">
     <div class="score-box b2" id="tierHighBox">
-      <div class="score-num">17–22</div>
+      <div class="score-num">17–24</div>
       <div class="score-tag">Real Discipline</div>
       <p>The gap left to close is optimization, not fundamentals.</p>
     </div>
@@ -591,7 +591,7 @@
 
     currentScore = count;
     scoreCount.textContent = count;
-    progressFill.style.width = (count/22*100) + '%';
+    progressFill.style.width = (count/24*100) + '%';
 
     [resultHigh, resultMid, resultLow].forEach(p => p.classList.remove('show'));
     [tierHighBox, tierMidBox, tierLowBox].forEach(b => b.classList.remove('active'));
